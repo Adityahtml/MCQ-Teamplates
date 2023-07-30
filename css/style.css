@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	color: #000;
+	font-style: normal;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a.btn:focus,
+button.btn:focus,
+a:focus,
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.container {
+	max-width: 97%;
+}
+.custom-row{
+	margin-inline:-0.25rem;
+}
+
+
+/* header css start */
+header.stcky {
+	box-shadow: 0px 3px 3px rgb(0 0 7 / 10%);
+}
+
+header {
+	padding: 8px 0px;
+}
+
+.logo img {
+	height: 45px;
+}
+
+.searchInput {
+	border: 1px solid #eceaea;
+	box-shadow: 0px 0px 3px #e2e2e2;
+	border-radius: 5px;
+	height: 50px;
+	align-items: center;
+	padding-right: 15px;
+	background-color: #f7f7ff;
+}
+
+.logo {
+	margin-right: 20px;
+}
+
+.searchInput input.form-control {
+	height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	background-color: transparent;
+}
+.searchInput input.form-control::placeholder{
+	font-size: 18px;
+}
+
+.technologyList-wrapper .navbar-nav {
+	flex-direction: row;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: blue;
+	justify-content: space-between;
+}
+
+.technologyList-wrapper {
+	padding-block: 20px;
+}
+
+.searchField-button {
+	color: #8e09ca;
+	font-weight: 900;
+	font-size: 28px;
+}
+button.navbar-toggler.btn.collapseBtn {
+    display: none !important;
+}
+
+/* Main-wrapper css */
+.mainWrapper-container {
+	display: flex;
+}
+
+.leftWrapper-container {
+	width: 250px;
+}
+
+.rightWrapper-container {
+	width: calc(100% - 250px);
+	margin-left: 40px;
+}
+
+.rightMain-wrapper {
+	display: flex;
+}
+
+.importantQuestion-wrapper {
+	width: 350px;
+	margin-left: 40px;
+}
+
+.rightMain-content {
+	width: calc(100% - 350px);
+}
+
+.section-heading h2 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 25px;
+}
+
+.section-heading p {
+	margin-bottom: 20px;
+}
+
+.categoriesListing ul li,
+.importantQuestion-container ul li {
+	color: #0000ff;
+	cursor: pointer !important;
+}
+
+.categoriesListing ul li+li,
+.importantQuestion-container ul li+li {
+	margin-top: 5px;
+}
+
+.categoriesListing ul li a,
+.importantQuestion-container ul li a {
+	cursor: pointer !important;
+}
+
+.courseBox h3 {
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #0656b3;
+	margin-bottom: 5px;
+}
+
+.courseBox p {
+	font-weight: 400;
+	font-size: 12px;
+	color: #9d9d9d;
+	margin-bottom: 0px
+}
+
+.courseLinkBox {
+	border: 1px solid #eceaea;
+	border-radius: 5px;
+	margin: 20px 0;
+	background: #fff;
+	padding: 11px 0px;
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	z-index: 9;
+}
+
+.courseLinkBox::after {
+	content: "";
+	width: 5%;
+	height: 100%;
+	background-color: #ccccccb0;
+	position: absolute;
+	top: 0px;
+	border-radius: 5px 0px 0px 5px;
+	left: 0px;
+	z-index: -1;
+	transition: 0.3s ease-in-out;
+}
+
+.courseLinkBox:hover:after {
+	width: 100%;
+	transition: 0.3s ease-in-out;
+}
